@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
 import ChefRec from "../ChefRec/ChefRec";
@@ -10,6 +11,9 @@ import Testimonials from "../Testimonials/Testimonials";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Spice Street | Menu</title>
+      </Helmet>
       <Banner />
       <Category />
       <SpiceSec />
